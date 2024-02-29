@@ -1,9 +1,0 @@
-﻿Image,Prompt,Model,Genre,Method
-image1.png,"high quality pond in the forest, in spring, with pastel colors",SD 1.5,Illustration,T2I
-image2.png,"best quality, hyper realistic photography, real tree with leaves, a tiny doll is hanging from a tree, realistic background, in the style of carl zeiss distagon t* 15mm f/4.5, 32k uhd, suspended/hanging, tilt-shift, in slinkachu style",SD 1.5,Photography,I2I
-image3.png,"best quality, very high resolution, hyper realistic photography, tree with leaves, a very tiny miniature figure is hanging from a tree, realistic background, in the style of canon 650D EOS f/4.5, 32k uhd, suspended/hanging, tilt-shift, in slinkachu style",SD 1.5,Photography,I2I
-image4.png,"best quality, 2d illustration of srnsnlf tiny monster in the middle of a garden, flowers in the background, season spring, cute, warm",SD 1.5,Illustration,T2I
-image5.png,"best quality, 2D illustration, srnsnlf tiny monster holding sweets in the middle, Halloween costume, standing character, simple background",SD 1.5,Illustration,T2I
-image6.png,"best quality, 2D illustration, srnsnlf tiny monster wearing soccer uniform, on a field, standing character in the middle, (simple background:1.3), (one soccer ball)",SD 1.5,Illustration,T2I
-image7.png,"<lora:DD-vntg-artstyle-v1:1> vntg artystyle ""vintage"" black and white tools, 2D illustration, line drawing style, (old hand drawing style), (high detailed), white background",SDXL,Illustration,I2I
-image8.png,"lora:DD-vntg-artstyle-v1:1 vntg artystyle ""vintage"" black and white tools, 2D illustration, line drawing style, (old hand drawing style), (high detailed), white background",SDXL,Illustration,I2I
