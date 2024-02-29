@@ -2,30 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery from CSV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header">
-        <div class="filter-container">
-            <button class="filter-btn" onclick="toggleFilters()">Filter</button>
-            <button class="filter-btn hidden" data-filter="category1">SD 1.5</button>
-    <button class="filter-btn hidden" data-filter="category2">SD 1.6</button>
-    <button class="filter-btn hidden" data-filter="category3">SDXL</button>
-    <div></div>
-    <button class="filter-btn hidden" data-filter="category1">Photography</button>
-    <button class="filter-btn hidden" data-filter="category2">Illustration</button>
-    <div></div>
-    <div></div>
-    <button class="filter-btn hidden" data-filter="category1">Text to Image</button>
-    <button class="filter-btn hidden" data-filter="category2">Image to Image</button>
-   <div></div>
-            <!-- 나머지 버튼들도 이와 같이 추가 -->
+
+<div id="header">
+    <p id="toggleFilters">Filter</p>
+    <div id="filters" class="filter-container">
+        <div class="filter-row">
+            <button class="filter" data-model="SD 1.5">SD 1.5  </button>
+            <button class="filter" data-model="SD 1.6">SD 1.6  </button>
+            <button class="filter" data-model="SDXL">SDXL  </button>
+        </div>
+        <div class="filter-row">
+            <button class="filter" data-genre="Photography">Photography</button>
+            <button class="filter" data-genre="Illustration">Illustration</button>
+
+        </div>
+        <div class="filter-row">
+            <button class="filter" data-method="T2I">Text to Image</button>
+            <button class="filter" data-method="I2I">Image to Image</button>
+
+           
         </div>
     </div>
-    
-    <div id="main-content"></div>
+</div>
 
-    <script src="script.js"></script>
+<div id="gallery">
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>

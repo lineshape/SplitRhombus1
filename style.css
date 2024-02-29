@@ -1,74 +1,77 @@
-#main-content {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    display: flex;
+    height: 160px;
+    font-size: 32px;
+    padding: 18px;
+    margin-bottom : 40px;
+}
+
+#toggleFilters {
+    flex-basis: 25%;
+    margin: 0;
+}
+
+#gallery {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 88px;
+    row-gap: 32px;
+    padding: 12px;
 }
 
-.gallery-row {
-    display: flex;
+.gallery-item {
+    margin: 8px;
+    flex-basis: calc(33.333% - 16px);
+    /* opacity: 0; 
+    transition: opacity 1s ease-out;  */
+}
+
+.gallery-item:nth-child(1),.gallery-item:nth-child(2) {
+    flex-basis: calc(50% - 16px);
+}
+
+.gallery-item:nth-child(4) {
+    flex-basis: calc(66.666% - 16px);
+}
+
+.gallery-item img {
     width: 100%;
-    justify-content: space-between;
-    margin-bottom: 20px;
 }
 
-/* .two-cols .gallery {
-    width: 50%; 
-} */
-
-/* .three-cols .gallery {
-    width: 33.333%; 
-} */
-
-.gallery {
-    margin: 0 5px;
+.caption {
+    text-align: left;
+    margin-top: 8px;
 }
 
-.gallery img {
-    max-width: 100%;
-    height: auto;
-
-}
-
-.gallery p {
-    text-align: center;
-    text-align: left; 
-    font-size: 1vw;
-    font-family: sans-serif;
-}
-
-
-.filter-btn {
-    background: none; /* 버튼 배경 제거 */
-    border: none; /* 버튼 테두리 제거 */
-    font-size: 2vw; /* 글자 크기 */
-    font-family: sans-serif; /* 산세리프 서체 */
-    cursor: pointer;
-    padding:4px;
-    text-align: left; /* 텍스트 오른쪽 정렬 */
-    width: 100%; /* 버튼 너비를 컨테이너에 맞춤 */
-}
-
-.filter-btn:hover {
-    text-decoration: underline;
+button {
+    background: none; /* 배경 색상 제거 */
+    color: inherit; /* 상위 요소에서 정의된 글자 색상을 상속받음 */
+    border: none; /* 테두리 제거 */
+    padding: 0; /* 패딩 제거 */
+    margin: 0; /* 마진 제거 */
+    font: inherit; /* 상위 요소에서 정의된 폰트 스타일을 상속받음 */
+    cursor: pointer; /* 마우스 커서를 포인터로 설정 */
+    font-size: 32px; /* 텍스트 크기를 32px로 설정 */
 }
 
 .filter-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto);
-    text-align: left; 
+    display: none;
+    flex-basis: calc(75% - 16px);
 }
 
-#filter-toggle {
-    visibility: visible; /* 'Filter' 버튼만 기본적으로 보이게 함 */
-    opacity: 1;
+.filter-row {
+    margin-bottom: 10px;
+    display: flex;
+    column-gap: 8px;
 }
 
-.visible {
-    visibility: visible;
-    opacity: 1;
-}
-
-.hidden {
-    display: none; /* 숨김 처리 */
+.filter {
+    flex-basis: 33.333%;
+    text-align: left;
+    
 }
